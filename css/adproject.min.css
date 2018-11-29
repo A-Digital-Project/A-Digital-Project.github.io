@@ -43,6 +43,11 @@
 	height: 30px;
 }
 
+.person-card {
+	width: 18rem;
+	margin: 5px auto;
+}
+
 footer {
 	padding: 120px 0;
 	width: 100%;
