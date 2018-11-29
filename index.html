@@ -50,22 +50,6 @@
 		</nav>
 		<p id="json"></p>
 		<div>
-			<script>
-				let user = '';
-
-				var client = new XMLHttpRequest();
-				client.open('GET', '/people.json');
-				client.onreadystatechange = function() {
-  					user += client.responseText;
-				}
-				client.send();
-				
-				user = JSON.parse(user);
-
-				for (var i = 0; i < user.people.length; i++) {
-					document.getElementById('json').innerHTML += user.people[i].name;
-				}
-			</script>
 			<p>This is the body of the page...</p>
 		</div>
 		<footer id="about">
