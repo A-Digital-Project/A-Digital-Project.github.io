@@ -51,12 +51,12 @@
 		<p id="json"></p>
 		<div>
 			<script>
-				let user;
+				let user = '';
 
 				var client = new XMLHttpRequest();
 				client.open('GET', '/people.json');
 				client.onreadystatechange = function() {
-  					user = client.responseText;
+  					user += client.responseText;
 				}
 				client.send();
 				

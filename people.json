@@ -3,12 +3,12 @@
 		{
 			"name": "Test1",
 			"ocuppation": "Programmer",
-			"description": "I'm this."
+			"description": "I am this."
 		},
 		{
 			"name": "Test",
 			"ocuppation": "Test person",
-			"description": "I'm not this."
+			"description": "I am not this."
 		}
 	]
 }
