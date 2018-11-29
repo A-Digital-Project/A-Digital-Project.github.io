@@ -18,6 +18,7 @@
 		<meta name="description" content="A Digital Project website.">
 		<meta name="author" content="A Digital Project">
 		<meta name="google-site-verification" content="QgJvSA2kdj18LdEZIJEu41l6GHzMgUMyF8S_1EdG35o" />
+		<!-- Copyright © 2018 - A Digital Project Team -->
 		<link rel="icon" href="dist/imgs/adp-ws-logo.png">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/adproject.min.css">
@@ -47,7 +48,24 @@
 				</ul>
 			</div>
 		</nav>
+		<p id="json"></p>
 		<div>
+			<script>
+				let user;
+
+				var client = new XMLHttpRequest();
+				client.open('GET', '/people.json');
+				client.onreadystatechange = function() {
+  					user = client.responseText;
+				}
+				client.send();
+				
+				user = JSON.parse(user);
+
+				for (var i = 0; i < user.people.length; i++) {
+					document.getElementById('json').innerHTML += user.people[i].name;
+				}
+			</script>
 			<p>This is the body of the page...</p>
 		</div>
 		<footer id="about">
@@ -72,11 +90,13 @@
 				</li>
 			</ul>
 			<h2>
-				<a style="color: white;" href="mailto:contact@adigitalproject.tk">contact@adigitalproject.tk</a>
+				<a style="color: #FFF;" href="mailto:contact@adigitalproject.tk">contact@adigitalproject.tk</a>
 			</h2>
-			<a class="top-button" href="#top">
-				<img src="dist/imgs/scroll-up-icon.png" alt="Scroll up">
-			</a>
+			<span class="top-button">
+				<a href="#top">
+					<img src="dist/imgs/scroll-up-icon.png" alt="Scroll up">
+				</a>
+			</span>
 		</footer>
 		<script src="js/jquery-3.3.1.slim.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>

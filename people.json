@@ -1,0 +1,14 @@
+{
+	"people": [
+		{
+			"name": "Test1",
+			"ocuppation": "Programmer",
+			"description": "I'm this."
+		},
+		{
+			"name": "Test",
+			"ocuppation": "Test person",
+			"description": "I'm not this."
+		}
+	]
+}
