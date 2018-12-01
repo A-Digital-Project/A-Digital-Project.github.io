@@ -7,11 +7,6 @@
 	src: url('dist/fnt/beleren-bold.ttf');
 }
 
-.void {
-	height: 12.5px;
-	background: transparent;
-}
-
 .beleren {
 	font-family: Beleren;
 }
@@ -20,6 +15,11 @@
 	width: 65%;
 	height: 65%;
 	margin-top: 3px;
+}
+
+.gj-footer-logo {
+	width: 80%;
+	margin-top: 2px;
 }
 
 .normal-footer-logo {
@@ -43,33 +43,24 @@
 	height: 30px;
 }
 
-.person-card {
-	width: 18rem;
-	margin: 5px auto;
+.card {
+	width: 16rem;
+	margin: 2.5px auto 10px;
 }
 
-footer {
-	padding: 120px 0;
-	width: 100%;
-	background-color: #000;
-	background-size: cover;
-	background-position: center;
-	text-align: center;
+.cards-row {
+	margin-left: unset;
+	margin-right: unset;
 }
 
-footer h1 {
-	color: #FFF;
-	font-weight: 400;
-}
-
-footer .social-footer {
+.social-footer {
 	padding: 0 0 30px;
-	margin: 0 auto;
-	width: 130px;
+	margin: 20px auto 0px;
+	width: 200px;
 	height: 35px;
 }
 
-footer .social-footer li {
+.social-footer li {
 	margin: 0 5px;
 	float: left;
 	border: 1px solid #e1e1e1;
@@ -84,16 +75,51 @@ footer .social-footer li {
 	transition: all .4s;
 }
 
-footer .social-footer li:hover {
+.social-footer li:hover {
 	-webkit-transform: scale(1.07);
 	-ms-transform: scale(1.07);
 	transform: scale(1.07);
 }
 
-footer .social-footer li a {
+.social-footer li a {
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+#team {
+	text-align: center;
+}
+
+#team h1 {
+	margin: 10px auto;
+}
+
+#team:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: #FFF transparent transparent;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+footer {
+	padding: 120px 0;
+	width: 100%;
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+footer h1 {
+	color: #FFF;
+	font-weight: 400;
 }
 
 footer h2 {
