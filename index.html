@@ -19,11 +19,17 @@
 		<meta name="author" content="A Digital Project">
 		<meta name="google-site-verification" content="QgJvSA2kdj18LdEZIJEu41l6GHzMgUMyF8S_1EdG35o" />
 		<!-- Copyright © A Digital Project 2019 -->
+		<noscript>The page might not work as intended if scripting is disabled, please enable it (do it for us please ♥).</noscript>
 		<link rel="icon" href="dist/imgs/logos/adp-ws-logo.png">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/adproject.min.css">
 	</head>
 	<body class="main-page-box">
+		<canvas class="dark">This browser is too old for dark mode to work, use a newer one please (we are sorry) :(</canvas>
+		<div class="dark">
+			<h1>Here you've got your dark mode, enjoy it!</h1>
+			<spoiler style="color:grey" onmouseover="Show(this)" onmouseout="Hide(this)"><hide>May be we'll add a real one if you ask us nicely ^^</hide></spoiler>
+		</div>
 		<nav id="top" class="navbar navbar-expand-lg navbar-light bg-light">
 			<span class="navbar-brand mb-0 beleren">ADP</span>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +50,9 @@
 					</div>
 					<li class="nav-item">
 						<a class="nav-link" href="#about">About Us</a>
+					</li>
+					<li id="night" class="nav-item">
+						<a id="nt" class="nav-link" href="#" title="Dark Mode!"><img src="/dist/imgs/sun.png"></a>
 					</li>
 				</ul>
 			</div>
@@ -91,11 +100,11 @@
 						<img class="discord-footer-logo" src="dist/imgs/icons/discord-icon-white.png" alt="Discord">
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="https://gamejolt.com/@ADigitalProject">
 						<img class="gj-footer-logo" src="dist/imgs/icons/gj-icon-white.png" alt="Game Jolt">
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="https://www.youtube.com/channel/UCbxYBhmsFPW5lqx1PL6diFA">
 						<img class="normal-footer-logo" src="dist/imgs/icons/yt-icon-white.png" alt="YouTube">
