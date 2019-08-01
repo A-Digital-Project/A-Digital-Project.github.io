@@ -1,10 +1,8 @@
-/*!
- * Copyright © 2018 A Digital Project Team
- */
+/* Copyright © A Digital Project 2019 */
 @font-face {
 	font-family: Beleren;
 	font-weight: bold;
-	src: url('dist/fnt/beleren-bold.ttf');
+	src: url('/dist/fnt/beleren-bold.ttf');
 }
 
 .beleren {
@@ -87,38 +85,339 @@
 	height: 100%;
 }
 
-#team {
+.bg-grey {
+	background: #e1e1e1;
+}
+
+.bg-black {
+	background: black;
+	color: white;
+}
+
+.btn-small {
+	background: black;
+	display: inline-block;
+	padding: 3px 10px;
+	color: white;
+	font-size: 17px;
+	margin-right: 7px;
+	font-weight: 700;
+	border: 5px solid black;
+	transition: all .2s;
+}
+
+.btn-big {
+	background: black;
+	display: inline-block;
+	padding: 3px 0;
+	max-width: 250px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	border: 5px solid black;
+	transition: all .2s;
+	box-sizing: border-box;
+}
+
+.btn-big:hover {
+	border: 5px solid black;
+	background: 0 0;
+	color: black;
+	text-decoration: none;
+}
+
+.btn-small:hover {
+	border: 5px solid black;
+	background: 0 0;
+	color: black;
+	text-decoration: none;
+}
+
+.center {
+	width: 100%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	right: 0;
+}
+
+.block .col-45 {
+	width: 45%;
+	padding: 0 40px;
+	box-sizing: border-box;
+	font-weight: 300;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-25%);
+	position: absolute;
+}
+
+.block .col-45 p {
+	padding: 0;
+	margin: 0 0 20px;
+	width: 100%;
+	line-height: 30px;
+}
+
+.box {
+	width: 100%;
+	margin: 0 auto;
+	padding: 120px 40px;
+	box-sizing: border-box;
+}
+
+.block {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.btn:nth-child(1) {
+	margin-bottom: 100px;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	width: 100%;
 	text-align: center;
 }
 
-#team h1 {
-	margin: 10px auto;
+section .box.bg-black h1:after {
+	background: white;
 }
 
-#team:after {
+section h2 {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+section h1:after {
+	background: black;
+	content: "";
+	display: block;
+	width: 130px;
+	height: 5px;
+	margin: 20px auto;
+}
+
+#changelog-list ul {
+	margin: auto;
+	text-align: left;
+}
+
+#changelog-list .btn {
+	margin: auto;
+	text-decoration: none;
+}
+
+#changelog-list .card {
+	width: 70%;
+}
+
+#requirements ul {
+	padding: 0;
+	margin: 60px 0 0;
+	width: 100%;
+}
+
+#requirements ul li {
+	margin: 0;
+	list-style: none;
+	color: white;
+	width: 49%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 20px 50px;
+	text-align: right;
+}
+
+#requirements ul li h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+#requirements ul li h4 {
+	margin: 0;
+	padding: 0;
+	color: #e1e1e1;
+	font-weight: 300;
+}
+
+#requirements ul li h4 a {
+	color: #e1e1e1;
+}
+
+#requirements ul li:nth-child(2n) {
+	border-left: 2px solid #e1e1e1;
+	text-align: left;
+}
+
+#projects .bg-grey:after {
 	content: "";
 	display: block;
 	width: 0;
 	height: 0;
 	border-style: solid;
 	border-width: 20px 20px 0;
-	border-color: #FFF transparent transparent;
+	border-color: #e1e1e1 transparent transparent;
+	margin: 0 auto;
+	position: relative;
+	top: 140px;
+}
+
+#projects:after {
+	background: black;
+	content: "";
+	display: block;
+	width: 75%;
+	height: 5px;
+	margin: 150px auto 0;
+}
+
+#about:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: white transparent transparent;
 	margin: 0 auto;
 	position: relative;
 	top: 20px;
 }
 
+#launcher:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: #e1e1e1 transparent transparent;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+#features:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: black transparent transparent;
+	margin: 0 auto;
+	position: relative;
+}
+
+#changelog:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: white transparent transparent;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+#screenshots:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: #e1e1e1 transparent transparent;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+#requirements:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: black transparent transparent;
+	margin: 0 auto;
+	position: relative;
+}
+
+#download:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0;
+	border-color: white transparent transparent;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+#screenshots {
+	background: #e1e1e1;
+}
+
+#launcher {
+	background: #e1e1e1;
+}
+
+#features ul {
+	margin: auto;
+	font-weight: 300;
+	list-style: inside;
+}
+
+lt {
+	text-decoration: line-through;
+}
+
+hide {
+	display: none;
+}
+
+spoiler {
+	width: 60px;
+	height: 1rem;
+	display: inline-block;
+}
+
 footer {
 	padding: 120px 0;
 	width: 100%;
-	background-color: #000;
-	background-size: cover;
-	background-position: center;
+	background-color: black;
 	text-align: center;
 }
 
 footer h1 {
-	color: #FFF;
+	color: white;
 	font-weight: 400;
 }
 
@@ -128,8 +427,12 @@ footer h2 {
 }
 
 footer h2 a {
-	color: #FFF;
+	color: white;
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 20px;
+}
+
+footer h2 a:hover {
+	color: white;
 }
