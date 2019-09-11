@@ -75,6 +75,7 @@
 					<li>This also works with the <a href="https://www.thpatch.net/wiki/Touhou_Patch_Center:Download" style="color:white;text-decoration:underline">Touhou Community Reliant Automatic <ex data-default="Patcher" data-text="Patchy" onmouseover="this.innerHTML = this.dataset.text" onmouseout="this.innerHTML = this.dataset.default">Patcher</ex></a> (the launcher will search for the custom.exe of the english patch, so if you want it to work with other patch change its name to "thXX_custom (en)" (please)).</li>
 					<li>Comes with an auto update feature so you do not have to worry about having to come here dozens of times ;)</li>
 					<li>Download replays for your favourite games, you can do it just by copying a replay's url!</li>
+					<li>Rate your favourite games and view how much people like that games, too!</li>
 				</ul>
 			</div>
 		</section>
@@ -83,13 +84,29 @@
 				<h1>Changelog</h1>
 				<div id="changelog-list">
 					<div class="card">
+						<div class="card-header" id="version-13">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#version-13-changelog" aria-expanded="true" aria-controls="version-13-changelog">Version 1.3</button>
+						</h5>
+						</div>
+
+						<div id="version-13-changelog" class="collapse show" aria-labelledby="version-13" data-parent="#changelog-list">
+						<div class="card-body">
+							<ul>
+								<li>We have added a feature so you can rate the games and also view their average rate!</li>
+								<li>Added some secret <spoiler style="width:1px" onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='1px'"><hide>(not so secret)</hide></spoiler> stuff~</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="card">
 						<div class="card-header" id="version-121">
 						<h5 class="mb-0">
 							<button class="btn btn-link" data-toggle="collapse" data-target="#version-121-changelog" aria-expanded="true" aria-controls="version-121-changelog">Version 1.21</button>
 						</h5>
 						</div>
 
-						<div id="version-121-changelog" class="collapse show" aria-labelledby="version-121" data-parent="#changelog-list">
+						<div id="version-121-changelog" class="collapse" aria-labelledby="version-121" data-parent="#changelog-list">
 						<div class="card-body">
 							<ul>
 								<li>Fixed the Launcher crashing in Windows 7. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We couldn't test it in W7 so we didn't know it was crashing :(</hide></spoiler></li>
