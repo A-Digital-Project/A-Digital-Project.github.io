@@ -104,13 +104,36 @@
 				<h1>Changelog</h1>
 				<div id="changelog-list">
 					<div class="card">
+						<div class="card-header" id="version-151">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#version-151-changelog" aria-expanded="true" aria-controls="version-151-changelog">Version 1.51</button>
+						</h5>
+						</div>
+
+						<div id="version-151-changelog" class="collapse show" aria-labelledby="version-151" data-parent="#changelog-list">
+						<div class="card-body">
+							<ul>
+								<li>Fixed custom.exe not being found.</li>
+								<li>Fixed dark mode persisting until tab change when disabled.</li>
+								<li>Fixed fan-games executing instead of opening their folders.</li>
+								<li>Added the context menu actions of the fan-games to a sidebar, too.</li>
+								<li>Added characters "-" and "_" to rename fan-games, as well as numbers 0-9.</li>
+								<li>Fixed crashing when rating a game when actually there's no game selected.</li>
+								<li>Fixed crashing when trying to open an inexistent AppData folder of any game. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We forgot to add the text for the error message :(</hide></spoiler></li>
+								<li>Fixed AoCF saying that it had an AppData folder and that its replay folder didn't exist.</li>
+								<li>Fixed exploit that made it posible so that you could rate the same game multiple times. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>If you discover bugs, report them, don't exploit them! Or we'll have Eiki lecture you for a long time~</hide></spoiler></li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="card">
 						<div class="card-header" id="version-15">
 						<h5 class="mb-0">
 							<button class="btn btn-link" data-toggle="collapse" data-target="#version-15-changelog" aria-expanded="true" aria-controls="version-15-changelog">Version 1.5</button>
 						</h5>
 						</div>
 
-						<div id="version-15-changelog" class="collapse show" aria-labelledby="version-15" data-parent="#changelog-list">
+						<div id="version-15-changelog" class="collapse" aria-labelledby="version-15" data-parent="#changelog-list">
 						<div class="card-body">
 							<ul>
 								<li>Added support for Touhou 17.5. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Don't ask why, we already know it is just a beta)</hide></spoiler></li>
