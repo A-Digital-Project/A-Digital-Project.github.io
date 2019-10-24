@@ -68,11 +68,11 @@
 			<div class="box bg-black">
 				<h1>Features</h1>
 				<ul>
-					<li>Wrap up all your Touhou games in the same place so you do not have tons of shortcuts!</li>
-					<li>You can also do it with fan games because we know some of you have tons, too; so do not worry, we got you covered.</li>
 					<li>Works with PC98 games too! <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(emulator (Neko Project II) and games included, but do not tell anyone!)</hide></spoiler></li>
 					<li>You can open a game's custom.exe (<spoiler style="width:auto" onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'">or config.exe for Touhou 7.5<hide>, may be ZUN thought it was funny to change the name, but it isn't -_-</hide></spoiler>) within the launcher.</li>
-					<li>This also works with the <a href="https://www.thpatch.net/wiki/Touhou_Patch_Center:Download" style="color:white;text-decoration:underline">Touhou Community Reliant Automatic <ex data-default="Patcher" data-text="Patchy" onmouseover="this.innerHTML = this.dataset.text" onmouseout="this.innerHTML = this.dataset.default">Patcher</ex></a> (the launcher will search for the custom.exe of the english patch, so if you want it to work with other patch change its name to "thXX_custom (en)" (please)).</li>
+					<li>Wrap up all your Touhou games in the same place so you do not have tons of shortcuts!</li>
+					<li>You can also do it with fan games because we know some of you have tons, too; so do not worry, we got you covered.</li>
+					<li>This also works with the <a href="https://www.thpatch.net/wiki/Touhou_Patch_Center:Download" style="color:white;text-decoration:underline">Touhou Community Reliant Automatic <ex data-default="Patcher" data-text="Patchy" onmouseover="this.innerHTML = this.dataset.text" onmouseout="this.innerHTML = this.dataset.default">Patcher</ex></a> (the launcher will search for the custom.exe of the english patch).</li>
 					<li>Comes with an auto update feature so you do not have to worry about having to come here dozens of times ;)</li>
 					<li>Download replays for your favourite games, you can do it just by copying a replay's url!</li>
 					<li>Rate your favourite games and view how much people like them!</li>
@@ -83,6 +83,19 @@
 			<div class="box bg-grey">
 				<h1>F.A.Q</h1>
 				<div id="faq-list">
+					<div class="card">
+						<div class="card-header" id="static-patches">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#faq-static-patches" aria-expanded="true" aria-controls="faq-static-patches">Does it support non-static patches?</button>
+						</h5>
+						</div>
+
+						<div id="faq-static-patches" class="collapse" aria-labelledby="static-patches" data-parent="#faq-list">
+						<div class="card-body">
+							<p>The answer is <b>yes</b>. The Launcher supports non-static patches (thcrap); in fact, we would recommend you not to use static patches.</p>
+						</div>
+						</div>
+					</div>
 					<div class="card">
 						<div class="card-header" id="game-buttons-images">
 						<h5 class="mb-0">
@@ -118,7 +131,7 @@
 
 						<div id="faq-taskbar-pinned" class="collapse" aria-labelledby="taskbar-pinned" data-parent="#faq-list">
 						<div class="card-body">
-							<p>We do not know yet, but as soon as we know how to fix this, we will do so.</p>
+							<p>We do not know the cause yet, but as soon as we know how to fix this, we will do so.</p>
 						</div>
 						</div>
 					</div>
@@ -130,13 +143,34 @@
 				<h1>Changelog</h1>
 				<div id="changelog-list">
 					<div class="card">
+						<div class="card-header" id="version-16">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#version-16-changelog" aria-expanded="true" aria-controls="version-16-changelog">Version 1.6</button>
+						</h5>
+						</div>
+
+						<div id="version-16-changelog" class="collapse show" aria-labelledby="version-16" data-parent="#changelog-list">
+						<div class="card-body">
+							<ul>
+								<li>Added Japanese language; some translations may be wrong, so let us know if you have any correction!</li>
+								<li>Added some tools to the games tab, this is subject to change in the future.</li>
+								<li>Added <a href="http://replay.royalflare.net/">replay.royalflare.net</a> as replay source. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>F for gensokyo.org</hide></spoiler></li>
+								<li>Changed the name of Touhou 12.3 to Hisotensoku because some people found the other one awkward.</li>
+								<h2>Things that are not changes:</h2>
+								<li>We're not renaming Touhou 17.5 to Touhou Explorer, may be we could rename it to "..."?</li>
+								<li>We don't nor does the Launcher prefer static patches, in fact, we do <b>not</b> recommend the use of static patches.</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="card">
 						<div class="card-header" id="version-152">
 						<h5 class="mb-0">
 							<button class="btn btn-link" data-toggle="collapse" data-target="#version-152-changelog" aria-expanded="true" aria-controls="version-152-changelog">Version 1.52</button>
 						</h5>
 						</div>
 
-						<div id="version-152-changelog" class="collapse show" aria-labelledby="version-152" data-parent="#changelog-list">
+						<div id="version-152-changelog" class="collapse" aria-labelledby="version-152" data-parent="#changelog-list">
 						<div class="card-body">
 							<ul>
 								<li>Added character "<b>'</b>" to rename fan-games.</li>
@@ -418,11 +452,11 @@
 						<img class="normal-footer-logo" src="/dist/imgs/icons/tw-icon-white.png" alt="Twitter">
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="https://fb.me/ADigitalProject">
 						<img class="normal-footer-logo" src="/dist/imgs/icons/fb-icon-white.png" alt="Facebook">
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="https://discord.gg/Mwnev4J">
 						<img class="discord-footer-logo" src="/dist/imgs/icons/discord-icon-white.png" alt="Discord">
