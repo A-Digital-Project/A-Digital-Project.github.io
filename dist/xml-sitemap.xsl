@@ -30,7 +30,6 @@
 							<tr>
 								<th width="75%">URL</th>
 								<th width="5%">Priority</th>
-								<th width="5%">Images</th>
 								<th width="15%">Last Change</th>
 							</tr>
 						</thead>
@@ -49,9 +48,6 @@
 									</td>
 									<td>
 										<xsl:value-of select="concat(sitemap:priority*100,'%')"/>
-									</td>
-									<td>
-										<xsl:value-of select="count(image:image)"/>
 									</td>
 									<td>
 										<xsl:value-of select="concat(substring(sitemap:lastmod,0,11),concat(' ', substring(sitemap:lastmod,12,5)))"/>
