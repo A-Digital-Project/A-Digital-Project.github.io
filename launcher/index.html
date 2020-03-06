@@ -68,7 +68,7 @@
 			<div class="box bg-black">
 				<h1>Features</h1>
 				<ul>
-					<li>Works with PC98 games too! <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(emulator (Neko Project II) and games included, but do not tell anyone!)</hide></spoiler></li>
+					<li>Works with PC98 games too! <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(emulator <a href="http://www.emulator-zone.com/doc.php/computer/kekoproject2.html" style="color:white;text-decoration:underline">Neko Project II</a> and games included, but do not tell anyone!)</hide></spoiler></li>
 					<li>You can open a game's custom.exe (<spoiler style="width:auto;display: inline-block;" onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'">or config.exe for Touhou 7.5<hide>, may be ZUN thought it was funny to change the name, but it isn't -_-</hide></spoiler>) within the launcher.</li>
 					<li>Wrap up all your Touhou games in the same place so you do not have tons of shortcuts!</li>
 					<li>You can also do it with fan games because we know some of you have tons, too; so do not worry, we got you covered.</li>
@@ -143,13 +143,29 @@
 				<h1>Changelog</h1>
 				<div id="changelog-list">
 					<div class="card">
+						<div class="card-header" id="version-110">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#version-110-changelog" aria-expanded="true" aria-controls="version-110-changelog">Version 1.10</button>
+							</h5>
+						</div>
+
+						<div id="version-110-changelog" class="collapse show" aria-labelledby="version-110" data-parent="#changelog-list">
+							<div class="card-body">
+								<ul>
+									<li>Fixed script errors with Lunarcast.</li>
+									<li>Fixed typo where Imperishable Night was spelled Impersihable Night. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Nobody noticed it and it's been there since the beginning, only one person~)</hide></spoiler></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
 						<div class="card-header" id="version-191">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#version-191-changelog" aria-expanded="true" aria-controls="version-191-changelog">Version 1.91</button>
 							</h5>
 						</div>
 
-						<div id="version-191-changelog" class="collapse show" aria-labelledby="version-191" data-parent="#changelog-list">
+						<div id="version-191-changelog" class="collapse" aria-labelledby="version-191" data-parent="#changelog-list">
 							<div class="card-body">
 								<ul>
 									<li>Fixed bug when pressing the 'Update List' button in the replays tab.</li>
