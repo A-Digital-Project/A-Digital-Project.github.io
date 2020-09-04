@@ -18,8 +18,8 @@
 		<meta name="description" content="Touhou Launcher project website.">
 		<meta name="author" content="A Digital Project">
 		<meta name="google-site-verification" content="QgJvSA2kdj18LdEZIJEu41l6GHzMgUMyF8S_1EdG35o" />
-		<!-- Copyright © A Digital Project 2019 -->
-		<noscript>The page might not work as intended if scripting is disabled (for example: dark mode), please enable it (do it for us please ♥).</noscript>
+		<!-- Copyright © A Digital Project 2020 -->
+		<noscript>The page might not work as intended if scripting is disabled (i.e. dark mode), we recommend you to enable it ♥.</noscript>
 		<link rel="icon" href="/dist/imgs/launcher/logo.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="/css/adproject.min.css">
@@ -132,13 +132,34 @@
 				<h1>Changelog</h1>
 				<div id="changelog-list">
 					<div class="card">
+						<div class="card-header" id="version-25">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#version-25-changelog" aria-expanded="true" aria-controls="version-25-changelog">Version 2.5</button>
+							</h5>
+						</div>
+
+						<div id="version-25-changelog" class="collapse show" aria-labelledby="version-25" data-parent="#changelog-list">
+							<div class="card-body">
+								<ul>
+									<li>Windows 7 is <b>again</b> supported (SP1 only).</li>
+									<li>Added music for Touhou 7.5 (IaMP).</li>
+									<li>Added Romanian language (thanks to Dragoneex!).</li>
+									<li>Now the location where mangas are stored in can be changed.</li>
+									<li>Fixed crash that occurred if closed the Launcher while downloading manga.</li>
+									<li>Trying to go past a manga page that has nothing to show now closes the reader.</li>
+									<li>Opening or downloading a manga now requires double <spoiler onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'" style="width:auto"><hide>dealing</hide> clicking</spoiler> instead of single clicking.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
 						<div class="card-header" id="version-241">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#version-241-changelog" aria-expanded="true" aria-controls="version-241-changelog">Version 2.4.1 / 2.4.2</button>
 							</h5>
 						</div>
 
-						<div id="version-241-changelog" class="collapse show" aria-labelledby="version-241" data-parent="#changelog-list">
+						<div id="version-241-changelog" class="collapse" aria-labelledby="version-241" data-parent="#changelog-list">
 							<div class="card-body">
 								<ul>
 									<li>Fixed the Launcher not opening.</li>
@@ -252,333 +273,345 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
-						<div class="card-header" id="version-111">
+					<div id="version-1-list" class="card">
+						<div class="card-header" id="version-1">
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-111-changelog" aria-expanded="true" aria-controls="version-111-changelog">Version 1.11</button>
+								<button class="btn btn-link" data-toggle="collapse" data-target="#version-1-changelog" aria-expanded="true" aria-controls="version-1-changelog">Version 1.X.X</button>
 							</h5>
 						</div>
 
-						<div id="version-111-changelog" class="collapse" aria-labelledby="version-111" data-parent="#changelog-list">
+						<div id="version-1-changelog" class="collapse" aria-labelledby="version-1" data-parent="#changelog-list">
 							<div class="card-body">
-								<ul>
-									<li>Fixed game clearance management and achievements.</li>
-									<li>Added something that nobody noticed was missing even after a month. Like really, nobody noticed it, not a single person. Scorefile clearance for Touhou 9.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-110">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-110-changelog" aria-expanded="true" aria-controls="version-110-changelog">Version 1.10</button>
-							</h5>
-						</div>
+								<div class="card">
+									<div class="card-header" id="version-111">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-111-changelog" aria-expanded="true" aria-controls="version-111-changelog">Version 1.11</button>
+										</h5>
+									</div>
 
-						<div id="version-110-changelog" class="collapse" aria-labelledby="version-110" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed script errors with Lunarcast.</li>
-									<li>Fixed typo where Imperishable Night was spelled Impersihable Night. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Nobody noticed it and it's been there since the beginning, only one person~)</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-191">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-191-changelog" aria-expanded="true" aria-controls="version-191-changelog">Version 1.9.1</button>
-							</h5>
-						</div>
+									<div id="version-111-changelog" class="collapse" aria-labelledby="version-111" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed game clearance management and achievements.</li>
+												<li>Added something that nobody noticed was missing even after a month. Like really, nobody noticed it, not a single person. Scorefile clearance for Touhou 9.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-110">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-110-changelog" aria-expanded="true" aria-controls="version-110-changelog">Version 1.10</button>
+										</h5>
+									</div>
 
-						<div id="version-191-changelog" class="collapse" aria-labelledby="version-191" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed bug when pressing the 'Update List' button in the replays tab.</li>
-									<li>Fixed bug in Light Mode that would make the achievements background images invisible.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-19">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-19-changelog" aria-expanded="true" aria-controls="version-19-changelog">Version 1.9</button>
-							</h5>
-						</div>
+									<div id="version-110-changelog" class="collapse" aria-labelledby="version-110" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed script errors with Lunarcast.</li>
+												<li>Fixed typo where Imperishable Night was spelled Impersihable Night. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Nobody noticed it and it's been there since the beginning, only one person~)</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-191">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-191-changelog" aria-expanded="true" aria-controls="version-191-changelog">Version 1.9.1</button>
+										</h5>
+									</div>
 
-						<div id="version-19-changelog" class="collapse" aria-labelledby="version-19" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Added game clearance management and related 'achievements'.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-18">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-18-changelog" aria-expanded="true" aria-controls="version-18-changelog">Version 1.8</button>
-							</h5>
-						</div>
+									<div id="version-191-changelog" class="collapse" aria-labelledby="version-191" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed bug when pressing the 'Update List' button in the replays tab.</li>
+												<li>Fixed bug in Light Mode that would make the achievements background images invisible.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-19">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-19-changelog" aria-expanded="true" aria-controls="version-19-changelog">Version 1.9</button>
+										</h5>
+									</div>
 
-						<div id="version-18-changelog" class="collapse" aria-labelledby="version-18" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Added replays management for games from Mountain of Faith up to the last one, excluding spin-offs.</li>
-									<li>Fixed bug where games that were using thcrap could not find their respective replay folders nor could the custom.exe.</li>
-									<br>
-									<li>And we also wish you all a happy new year!</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-17">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-17-changelog" aria-expanded="true" aria-controls="version-17-changelog">Version 1.7</button>
-							</h5>
-						</div>
+									<div id="version-19-changelog" class="collapse" aria-labelledby="version-19" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Added game clearance management and related 'achievements'.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-18">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-18-changelog" aria-expanded="true" aria-controls="version-18-changelog">Version 1.8</button>
+										</h5>
+									</div>
 
-						<div id="version-17-changelog" class="collapse" aria-labelledby="version-17" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed typo in Settings tab where PoFV was labeled as PCB.</li>
-									<li>The rating system has been disabled until we find time to fix it properly for once and for all!</li>
-									<li>Now it is possible to add images to the tools buttons just as you would do with normal buttons (i.e. for Scorefile Converter would be "toolSC.png").</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-16">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-16-changelog" aria-expanded="true" aria-controls="version-16-changelog">Version 1.6</button>
-							</h5>
-						</div>
+									<div id="version-18-changelog" class="collapse" aria-labelledby="version-18" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Added replays management for games from Mountain of Faith up to the last one, excluding spin-offs.</li>
+												<li>Fixed bug where games that were using thcrap could not find their respective replay folders nor could the custom.exe.</li>
+												<br>
+												<li>And we also wish you all a happy new year!</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-17">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-17-changelog" aria-expanded="true" aria-controls="version-17-changelog">Version 1.7</button>
+										</h5>
+									</div>
 
-						<div id="version-16-changelog" class="collapse" aria-labelledby="version-16" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Added Japanese language; some translations may be wrong, so let us know if you have any correction!</li>
-									<li>Added some tools to the games tab, this is subject to change in the future.</li>
-									<li>Added <a href="http://replay.royalflare.net/">replay.royalflare.net</a> as replay source. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>F for gensokyo.org</hide></spoiler></li>
-									<li>Changed the name of Touhou 12.3 to Hisotensoku because some people found the other one awkward.</li>
-									<h2>Things that are not changes:</h2>
-									<li>We are not renaming Touhou 17.5 to 'Touhou Explorer'<spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>, may be we could rename it to "..."?</hide></spoiler></li>
-									<li>We do not prefer static patches, in fact, we do <b>not</b> recommend the use of static patches.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-152">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-152-changelog" aria-expanded="true" aria-controls="version-152-changelog">Version 1.5.2</button>
-							</h5>
-						</div>
+									<div id="version-17-changelog" class="collapse" aria-labelledby="version-17" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed typo in Settings tab where PoFV was labeled as PCB.</li>
+												<li>The rating system has been disabled until we find time to fix it properly for once and for all!</li>
+												<li>Now it is possible to add images to the tools buttons just as you would do with normal buttons (i.e. for Scorefile Converter would be "toolSC.png").</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-16">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-16-changelog" aria-expanded="true" aria-controls="version-16-changelog">Version 1.6</button>
+										</h5>
+									</div>
 
-						<div id="version-152-changelog" class="collapse" aria-labelledby="version-152" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Added character "<b>'</b>" to rename fan-games.</li>
-									<li>Fixed Discord link in About section not working.</li>
-									<li>Added a cooldown of 1 second to the rating system.</li>
-									<li>Fixed fan-games being opened right away after clicking once.</li>
-									<li>Fixed typo with Perfect Cherry Blossom being named Perfect Cheryy Blossom. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We were writing the names very fast so we didn't notice :(</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-151">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-151-changelog" aria-expanded="true" aria-controls="version-151-changelog">Version 1.5.1</button>
-							</h5>
-						</div>
+									<div id="version-16-changelog" class="collapse" aria-labelledby="version-16" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Added Japanese language; some translations may be wrong, so let us know if you have any correction!</li>
+												<li>Added some tools to the games tab, this is subject to change in the future.</li>
+												<li>Added <a href="http://replay.royalflare.net/">replay.royalflare.net</a> as replay source. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>F for gensokyo.org</hide></spoiler></li>
+												<li>Changed the name of Touhou 12.3 to Hisotensoku because some people found the other one awkward.</li>
+												<h2>Things that are not changes:</h2>
+												<li>We are not renaming Touhou 17.5 to 'Touhou Explorer'<spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>, may be we could rename it to "..."?</hide></spoiler></li>
+												<li>We do not prefer static patches, in fact, we do <b>not</b> recommend the use of static patches.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-152">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-152-changelog" aria-expanded="true" aria-controls="version-152-changelog">Version 1.5.2</button>
+										</h5>
+									</div>
 
-						<div id="version-151-changelog" class="collapse" aria-labelledby="version-151" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed custom.exe not being found.</li>
-									<li>Fixed dark mode persisting until tab change when disabled.</li>
-									<li>Fixed fan-games executing instead of opening their folders.</li>
-									<li>Added the context menu actions of the fan-games to a sidebar, too.</li>
-									<li>Added characters "-" and "_" to rename fan-games, as well as numbers 0-9.</li>
-									<li>Fixed crashing when rating a game when actually there's no game selected.</li>
-									<li>Fixed crashing when trying to open an inexistent AppData folder of any game. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We forgot to add the text for the error message :(</hide></spoiler></li>
-									<li>Fixed AoCF saying that it had an AppData folder and that its replay folder didn't exist.</li>
-									<li>Fixed exploit that made it posible so that you could rate the same game multiple times. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>If you discover bugs, report them, don't exploit them! Or we'll have Lady Eiki lecture you for a long time~</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-15">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-15-changelog" aria-expanded="true" aria-controls="version-15-changelog">Version 1.5</button>
-							</h5>
-						</div>
+									<div id="version-152-changelog" class="collapse" aria-labelledby="version-152" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Added character "<b>'</b>" to rename fan-games.</li>
+												<li>Fixed Discord link in About section not working.</li>
+												<li>Added a cooldown of 1 second to the rating system.</li>
+												<li>Fixed fan-games being opened right away after clicking once.</li>
+												<li>Fixed typo with Perfect Cherry Blossom being named Perfect Cheryy Blossom. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We were writing the names very fast so we didn't notice :(</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-151">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-151-changelog" aria-expanded="true" aria-controls="version-151-changelog">Version 1.5.1</button>
+										</h5>
+									</div>
 
-						<div id="version-15-changelog" class="collapse" aria-labelledby="version-15" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Added support for Touhou 17.5. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Don't ask why, we already know it is just a beta)</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-14">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-14-changelog" aria-expanded="true" aria-controls="version-14-changelog">Version 1.4</button>
-							</h5>
-						</div>
+									<div id="version-151-changelog" class="collapse" aria-labelledby="version-151" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed custom.exe not being found.</li>
+												<li>Fixed dark mode persisting until tab change when disabled.</li>
+												<li>Fixed fan-games executing instead of opening their folders.</li>
+												<li>Added the context menu actions of the fan-games to a sidebar, too.</li>
+												<li>Added characters "-" and "_" to rename fan-games, as well as numbers 0-9.</li>
+												<li>Fixed crashing when rating a game when actually there's no game selected.</li>
+												<li>Fixed crashing when trying to open an inexistent AppData folder of any game. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We forgot to add the text for the error message :(</hide></spoiler></li>
+												<li>Fixed AoCF saying that it had an AppData folder and that its replay folder didn't exist.</li>
+												<li>Fixed exploit that made it posible so that you could rate the same game multiple times. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>If you discover bugs, report them, don't exploit them! Or we'll have Lady Eiki lecture you for a long time~</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-15">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-15-changelog" aria-expanded="true" aria-controls="version-15-changelog">Version 1.5</button>
+										</h5>
+									</div>
 
-						<div id="version-14-changelog" class="collapse" aria-labelledby="version-14" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>We have added a dark mode so you don't get blind at night! <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Not yet available in the page)</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-131">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-131-changelog" aria-expanded="true" aria-controls="version-131-changelog">Version 1.3.1</button>
-							</h5>
-						</div>
+									<div id="version-15-changelog" class="collapse" aria-labelledby="version-15" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Added support for Touhou 17.5. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Don't ask why, we already know it is just a beta)</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-14">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-14-changelog" aria-expanded="true" aria-controls="version-14-changelog">Version 1.4</button>
+										</h5>
+									</div>
 
-						<div id="version-131-changelog" class="collapse" aria-labelledby="version-131" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed bug that would crash the Launcher when viewing average rates. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>It's the float type fault, not ours!</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-13">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-13-changelog" aria-expanded="true" aria-controls="version-13-changelog">Version 1.3</button>
-							</h5>
-						</div>
+									<div id="version-14-changelog" class="collapse" aria-labelledby="version-14" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>We have added a dark mode so you don't get blind at night! <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>(Not yet available in the page)</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-131">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-131-changelog" aria-expanded="true" aria-controls="version-131-changelog">Version 1.3.1</button>
+										</h5>
+									</div>
 
-						<div id="version-13-changelog" class="collapse" aria-labelledby="version-13" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>We have added a feature so you can rate the games and also view their average rate!</li>
-									<li>Added some <spoiler style="width:auto" onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'">secret <hide>(not so secret)</hide></spoiler> stuff~</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-121">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-121-changelog" aria-expanded="true" aria-controls="version-121-changelog">Version 1.2.1</button>
-							</h5>
-						</div>
+									<div id="version-131-changelog" class="collapse" aria-labelledby="version-131" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed bug that would crash the Launcher when viewing average rates. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>It's the float type fault, not ours!</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-13">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-13-changelog" aria-expanded="true" aria-controls="version-13-changelog">Version 1.3</button>
+										</h5>
+									</div>
 
-						<div id="version-121-changelog" class="collapse" aria-labelledby="version-121" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed the Launcher crashing in Windows 7. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We couldn't test it in W7 so we didn't know it was crashing :(</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-12">
-							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#version-12-changelog" aria-expanded="true" aria-controls="version-12-changelog">Version 1.2</button>
-							</h5>
-						</div>
+									<div id="version-13-changelog" class="collapse" aria-labelledby="version-13" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>We have added a feature so you can rate the games and also view their average rate!</li>
+												<li>Added some <spoiler style="width:auto" onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'">secret <hide>(not so secret)</hide></spoiler> stuff~</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-121">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-121-changelog" aria-expanded="true" aria-controls="version-121-changelog">Version 1.2.1</button>
+										</h5>
+									</div>
 
-						<div id="version-12-changelog" class="collapse" aria-labelledby="version-12" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Added support for Touhou 17, thus unsupporting its trial. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>That was quick, wasn't it?</hide></spoiler></li>
-									<li>When adding an image for a button its text will disappear. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>Thank the person who suggested this, we never thought of this! <3</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-11">
-							<h5 class="mb-0">
-								<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-11-changelog" aria-expanded="true" aria-controls="version-11-changelog">Version 1.1</button>
-							</h5>
-						</div>
+									<div id="version-121-changelog" class="collapse" aria-labelledby="version-121" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed the Launcher crashing in Windows 7. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>We couldn't test it in W7 so we didn't know it was crashing :(</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-12">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#version-12-changelog" aria-expanded="true" aria-controls="version-12-changelog">Version 1.2</button>
+										</h5>
+									</div>
 
-						<div id="version-11-changelog" class="collapse" aria-labelledby="version-11" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Administrator rights are no longer required to play PC-98 games.</li>
-									<li>Fixed a bug where replays files would download in the incorrect place.</li>
-									<li>From now on, when you copy a replay's url you will be asked if you want to download that replay. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>See? This time it isn't only a simple bug fix, we told you to trust us!</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-103">
-							<h5 class="mb-0">
-								<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-103-changelog" aria-expanded="true" aria-controls="version-103-changelog">Version 1.0.3</button>
-							</h5>
-						</div>
+									<div id="version-12-changelog" class="collapse" aria-labelledby="version-12" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Added support for Touhou 17, thus unsupporting its trial. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>That was quick, wasn't it?</hide></spoiler></li>
+												<li>When adding an image for a button its text will disappear. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>Thank the person who suggested this, we never thought of this! <3</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-11">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-11-changelog" aria-expanded="true" aria-controls="version-11-changelog">Version 1.1</button>
+										</h5>
+									</div>
 
-						<div id="version-103-changelog" class="collapse" aria-labelledby="version-103" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed a bug where the window would not auto-close in certain cases. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>Next update will contain something that is not a bug fix, trust us!</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-102">
-							<h5 class="mb-0">
-								<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-102-changelog" aria-expanded="true" aria-controls="version-102-changelog">Version 1.0.2</button>
-							</h5>
-						</div>
+									<div id="version-11-changelog" class="collapse" aria-labelledby="version-11" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Administrator rights are no longer required to play PC-98 games.</li>
+												<li>Fixed a bug where replays files would download in the incorrect place.</li>
+												<li>From now on, when you copy a replay's url you will be asked if you want to download that replay. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>See? This time it isn't only a simple bug fix, we told you to trust us!</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-103">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-103-changelog" aria-expanded="true" aria-controls="version-103-changelog">Version 1.0.3</button>
+										</h5>
+									</div>
 
-						<div id="version-102-changelog" class="collapse" aria-labelledby="version-102" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed a bug where it wasn't able to run PC-98 games (it required <spoiler onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'" style="width:auto"><hide>true</hide> administrator</spoiler> rights). <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>Sorry for not fixing every bug at once :(</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-101">
-							<h5 class="mb-0">
-								<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-101-changelog" aria-expanded="true" aria-controls="version-101-changelog">Version 1.0.1</button>
-							</h5>
-						</div>
+									<div id="version-103-changelog" class="collapse" aria-labelledby="version-103" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed a bug where the window would not auto-close in certain cases. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>Next update will contain something that is not a bug fix, trust us!</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-102">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-102-changelog" aria-expanded="true" aria-controls="version-102-changelog">Version 1.0.2</button>
+										</h5>
+									</div>
 
-						<div id="version-101-changelog" class="collapse" aria-labelledby="version-101" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Fixed a bug where it wasn't able to link fan-games with Unicode characters (non-ASCII characters, such as Japanese ones). <spoiler onmouseover="Show(this)" onmouseout="Hide(this)" style="display: block"><hide>Thank the 4th release of <a href="https://en.touhouwiki.net/wiki/Gensou_Shoujo_Taisen">Fantasy Maiden Wars</a>, we wouldn't have found the bug if it wasn't for it :(</hide></spoiler></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="version-10">
-							<h5 class="mb-0">
-								<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-10-changelog" aria-expanded="true" aria-controls="version-10-changelog">Version 1.0</button>
-							</h5>
-						</div>
+									<div id="version-102-changelog" class="collapse" aria-labelledby="version-102" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed a bug where it wasn't able to run PC-98 games (it required <spoiler onmouseover="Show(this)" onmouseout="Hide(this);this.style.width='auto'" style="width:auto"><hide>true</hide> administrator</spoiler> rights). <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>Sorry for not fixing every bug at once :(</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-101">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-101-changelog" aria-expanded="true" aria-controls="version-101-changelog">Version 1.0.1</button>
+										</h5>
+									</div>
 
-						<div id="version-10-changelog" class="collapse" aria-labelledby="version-10" data-parent="#changelog-list">
-							<div class="card-body">
-								<ul>
-									<li>Initial release. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>More to come, we promise :)</hide></spoiler></li>
-								</ul>
+									<div id="version-101-changelog" class="collapse" aria-labelledby="version-101" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Fixed a bug where it wasn't able to link fan-games with Unicode characters (non-ASCII characters, such as Japanese ones). <spoiler onmouseover="Show(this)" onmouseout="Hide(this)" style="display: block"><hide>Thank the 4th release of <a href="https://en.touhouwiki.net/wiki/Gensou_Shoujo_Taisen">Fantasy Maiden Wars</a>, we wouldn't have found the bug if it wasn't for it :(</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="version-10">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapses" data-toggle="collapse" data-target="#version-10-changelog" aria-expanded="true" aria-controls="version-10-changelog">Version 1.0</button>
+										</h5>
+									</div>
+
+									<div id="version-10-changelog" class="collapse" aria-labelledby="version-10" data-parent="#version-1-list">
+										<div class="card-body">
+											<ul>
+												<li>Initial release. <spoiler onmouseover="Show(this)" onmouseout="Hide(this)"><hide>More to come, we promise :)</hide></spoiler></li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
