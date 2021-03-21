@@ -18,7 +18,7 @@
 		<meta name="description" content="Touhou Launcher project website.">
 		<meta name="author" content="A Digital Project">
 		<meta name="google-site-verification" content="QgJvSA2kdj18LdEZIJEu41l6GHzMgUMyF8S_1EdG35o" />
-		<!-- Copyright © A Digital Project 2020 -->
+		<!-- Copyright © A Digital Project 2021 -->
 		<noscript>The page might not work as intended if scripting is disabled (i.e. dark mode), we recommend you to enable it ♥.</noscript>
 		<link rel="icon" href="/dist/imgs/launcher/logo.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -132,13 +132,35 @@
 				<h1>Changelog</h1>
 				<div id="changelog-list">
 					<div class="card">
+						<div class="card-header" id="version-29">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#version-29-changelog" aria-expanded="true" aria-controls="version-29-changelog">Version 2.9.0</button>
+							</h5>
+						</div>
+
+						<div id="version-29-changelog" class="collapse show" aria-labelledby="version-29" data-parent="#changelog-list">
+							<div class="card-body">
+								<ul>
+									<li>Fixed messed up music names from Touhou 3.</li>
+									<li>The download of print works can now be stopped.</li>
+									<li>Fixed volume resetting itself after restarting the Launcher.</li>
+									<li>Added a confirmation dialog before downloading a print work.</li>
+									<li>Added support for Touhou 18 ahead of its <a href="https://touhou-project.news/news/3368/">trial release</a> on March 21st!</li>
+									<li>Fixed bug when using images for the tools' buttons would crash the Launcher.</li>
+									<li>Fixed japanese characters not working in paths of PC98 games (NP2 does not support them).</li>
+									<li>Fixed large print works leaving the Launcher as not responding until downloading had finished.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
 						<div class="card-header" id="version-281">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#version-281-changelog" aria-expanded="true" aria-controls="version-281-changelog">Version 2.8.1</button>
 							</h5>
 						</div>
 
-						<div id="version-281-changelog" class="collapse show" aria-labelledby="version-281" data-parent="#changelog-list">
+						<div id="version-281-changelog" class="collapse" aria-labelledby="version-281" data-parent="#changelog-list">
 							<div class="card-body">
 								<ul>
 									<li>Fixed bug where the Launcher wouldn't be able to find the path to the PC98 emulator.</li>
@@ -768,7 +790,7 @@
 				<h1>Download</h1>
 				<h2>Are you ready to download Touhou Launcher? Then go ahead and smash the button!</h2>
 				<br>
-				<a href="dl.html" class="btn-big dl-btn" onmouseover="this.innerHTML = 'Smash it!'" onmouseout="this.innerHTML = 'The Button!'">The Button!</a>
+				<a href="http://tiny.cc/thlauncher" class="btn-big dl-btn" onmouseover="this.innerHTML = 'Smash it!'" onmouseout="this.innerHTML = 'The Button!'">The Button!</a>
 			</div>
 		</section>
 		<footer>
